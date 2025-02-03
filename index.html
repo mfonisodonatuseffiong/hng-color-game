@@ -4,18 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color Guessing Game</title>
-    <link rel="stylesheet" href="style.css"> <!-- Linking CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <div class="container">
+        <!-- Game Title (Blinking and Colorful) -->
         <h1 class="title" data-testid="gameInstructions">Guess the Correct Color!</h1>
+
+        <!-- Target Color Display -->
         <div id="colorBox" class="color-box" data-testid="colorBox"></div>
-        <div id="options" class="options"></div>
-        <p id="gameStatus" class="game-status" data-testid="gameStatus"></p>
-        <p class="score-text">Score: <span id="score" data-testid="score">0</span></p>
+
+        <!-- Color Options -->
+        <div class="options" id="options">
+            <!-- Buttons will be dynamically inserted here by JavaScript -->
+        </div>
+
+        <!-- Game Status -->
+        <p id="gameStatus" class="game-status" data-testid="gameStatus">Pick a color!</p>
+
+        <!-- Score Counter -->
+        <p id="score" class="score-text" data-testid="score">Score: 0</p>
+
+        <!-- New Game Button -->
         <button id="newGameButton" class="new-game-button" data-testid="newGameButton">New Game</button>
     </div>
 
-    <script src="script.js"></script> <!-- Linking JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
