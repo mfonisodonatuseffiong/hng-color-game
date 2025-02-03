@@ -41,20 +41,29 @@ function startNewGame() {
 // Function to check the user's guess
 function checkGuess(selectedColor) {
     if (selectedColor === targetColor) {
-        gameStatus.textContent = "Correct!";
+        gameStatus.textContent = "Correct! 🎉";
         gameStatus.style.color = "green";
         score++;
     } else {
-        gameStatus.textContent = "Wrong! Try again.";
+        gameStatus.textContent = "Wrong! Try Again.";
         gameStatus.style.color = "red";
     }
 
     // Update score
     scoreDisplay.textContent = `Score: ${score}`;
+
+    // Change the color box to a new target color
+    targetColor = colors[Math.floor(Math.random() * colors.length)];
+    colorBox.style.backgroundColor = targetColor;
 }
 
 // Event listener for new game button
-newGameButton.addEventListener("click", startNewGame);
+newGameButton.addEventListener("click", () => {
+    // Reset the score and start a new game
+    score = 0;
+    scoreDisplay.textContent = `Score: ${score}`;
+    startNewGame();
+});
 
 // Start the game initially
 startNewGame();
