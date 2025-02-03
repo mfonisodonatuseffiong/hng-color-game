@@ -35,7 +35,7 @@ The **Color Guessing Game** is a fun and interactive game where players guess th
 
 ### **Deploy on Vercel**
 1. Push your code to GitHub.
-2. Go to [Vercel](https://color-guessing-game-inky.vercel.app/), create an account, and import your repo.
+2. Go to [Vercel](https://color-guessing-game-git-master-mfonisos-projects.vercel.app/), create an account, and import your repo.
 3. Click "Deploy" and get your live link.
 
 ## 📜 License
